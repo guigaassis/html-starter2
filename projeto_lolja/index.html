@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamStore</title>
+</head>
+<body>
+   <div class="navbar show-menu">
+    <div class="header-inner-content">
+        <h1 class="logo">Dream<span>Store</span></h1>
+        <nav>
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="index2.html"><li>Produtos</li></a>
+                <a href="contato.html"><li>Contato</li></a>
+                
+            </ul>
+        </nav>
+        <div class="nav-icons-container">
+            <img src="./images/cart.png"/>
+            <img src="./images/menu.png" class="menu-button"/>
+        </div>
+    </div>
+   </div>
+   <header>
+    <div class="header--inner-content">
+        <div class="header-bottom-side">
+            <div class="header-bottom-side-left">
+                <h2>Chega De Ter Uma Máquina Antiga!</h2>
+                <p>O Sucesso só virá após uma melhora no seu Desempenho! As vezes o estilo influencia.</p>
+                <a href="index2.html"><button>Ver Agora &#8594;</button></a>
+            </div>
+            <div class="header-bottom-side-right">
+                <img src="./images/products/lenovo.webp"/>
+            </div>
+        </div>
+    </div>
+   </header>
+
+
+
+<!--Main Content-->
+<main>
+    <div class="gray-background">
+        <div class="page-inner-content">
+            <div class="cols cols-3">
+                <img src="./images/products/product-1.png" alt=""/>
+                <img src="./images/products/product-2.png" alt=""/>
+                <img src="./images/products/product-3.png" alt=""/>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+   <script>
+    const navbar = document.querySelector(".navbar")
+    const menuButton = document.querySelector(".menu-button");
+
+menuButton.addEventListener("click", () => {
+    navbar.classList.toggle("show-menu");
+
+});
+
+
+   </script>
+</body>
+</html>
